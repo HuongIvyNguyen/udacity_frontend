@@ -1,0 +1,24 @@
+/* add your CSS here */
+img {
+    width: 300px;
+    border: solid;
+    padding: 1em;
+}
+
+.interesting_fact {
+    font-style: italic;
+}
+span {
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+}
+html {
+    border: solid;
+}
+div.information {
+    border: solid;
+    padding: 1em;
+}
+

@@ -1,24 +1,42 @@
 /* add your CSS here */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
     width: 300px;
-    border: solid;
-    padding: 1em;
+    height: auto;
+    margin: 0;
+    padding: 5px 0 12px 0;
+    border: solid 0px #ccc;
 }
 
 .interesting_fact {
     font-style: italic;
 }
+
 span {
     font-weight: bold;
 }
+
 ul {
     list-style: none;
-}
-html {
-    border: solid;
-}
-div.information {
-    border: solid;
-    padding: 1em;
+    text-align: left;
+    padding: 0 0 10px 0;
 }
 
+.information {
+    border: solid 1px #ccc;
+    margin: 0 auto;
+    width: 300px;
+    padding: 18px;
+    box-shadow: 0px 10px 20px  gray;
+}
+
+.details {
+    border: solid 1px #ccc;
+    padding: 0 15px;
+}
+h3 {
+    font-size: 36px;
+}

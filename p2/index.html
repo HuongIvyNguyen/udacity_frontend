@@ -9,33 +9,78 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1 class="name">Ivy Huong Nguyen</h1>
-    <h3 class="title"> Data Scientist - Chemist</h3>
-    <div class="container">
-        <div class="row">
-            <div class="two_columns">
-                <a class="navbar-link" href="#content-home"></a>
-                    <p class="intro-txt">About Me</p>
-            </div>
-
-            <div class="two_columns">
-                <a class="navbar-link" href="#content-portfolio"></a>
-                    <p class="intro-txt">Portfolio</p>
-            </div>
-
-            <div class="two_columns">
-                <a class="navbar-link" href="#resume"></a>
-                    <p class="intro-txt">Resume</p>
-            </div>
-
-            <div class="two_columns">
-                <a class="navbar-link" href="#contact"></a>
-                    <p class="intro-txt">Contact</p>
-            </div>
+    <div class="main_nav">
+        <div class="title_container">
+            <h1 id="site_title" class="title"> Ivy Nguyen</h1>     
         </div>
-        <div class="img_container">
-            <img class = "data_science_img" src="data_science.png" alt="data science">
+        <div id="nav" class="nav_bar">
+            <ul class="nav_list">
+                <li class=nav_item>
+                    <a> About Me</a>
+                </li>
+                <li class=nav_item>
+                    <a> Portfolio</a>
+                </li>
+                <li class="nav_item">
+                    <a> Resume </a>
+                </li>
+                <li class="nav_item">
+                    <a> Contact </a>
+                </li>
+            </ul>     
         </div>
     </div>
+    <div class="title_logo">
+        <img class="logo" src="logo.png" alt="personal logo">
+    </div>
+    <div class="empty1"></div>
+
+    <header>
+        <div class="intro_header">
+            <h1 class="header_content">Hi! I'm Ivy Nguyen.</h1>
+        </div>
+        <hr>
+        <div class="chemist">
+            <h2 class="chemist_text">Data Scientist - Chemist</h2>
+        </div>
+        <div class ="banner">
+            <h3 class="banner_context">Without DATA you're just another person with an opinion. (W. Edwards Deming)</h3>
+        </div>
+    </header>
+    <div class="featured_work_title">
+        <h2 id="feature"> Featured Work </h2>
+    </div>
+    <div class="featured_work">
+        <div class="work_list">
+            <a href="https://github.com/HuongIvyNguyen/udacity_business_analyst/blob/master/project7/p8_HuongIvyNguyen.pdf">
+                <img class="kmean" src="k-mean.jpg" alt="k means clustering" >
+            </a>
+            <div class="overlay">
+                <div class="overlay-text">The combination of k-means clustering model and time-series algorithm in forecasting sales for new stores.</div>
+            </div>
+        </div>
+        <div class="work_list">
+            <a href="https://github.com/HuongIvyNguyen/2016_Presidential_Campaign">
+                <img class="election" src="election_wa.png"  alt="washington election 2016">
+            </a>
+            <div class="overlay">
+                <div class="overlay-text">Investigate all factors that potentially correlate the financial contributions to the 2016 presidential campaign within the Washington state.</div>
+            </div>
+        </div>
+        <div class="work_list">
+            <a href="https://github.com/HuongIvyNguyen/enron_fraud/blob/master/Enron_Fraud_Report.ipynb">
+                <img class="enron" src="enron.jpg" alt="enron email dataset">
+            </a>
+            <div class="overlay">
+                <div class="overlay-text">Build a “person of interest” (POI) identifier using DecisionTreeClassifier algorithm from scikit-learn with the optimized parameters.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <p class="copyright">© Ivy Huong Nguyen 2017</p>
+        </div>
+    </footer>
 </body>
 </html>

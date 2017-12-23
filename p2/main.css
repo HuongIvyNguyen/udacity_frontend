@@ -1,40 +1,226 @@
-.name {
+html {
+    background-color: 3D3A39;
+    color: white;
+    font-family: proxima nova, Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.main_nav {
+    width: 100%;
+}
+
+/* Site title */
+
+.title_container {
+    display: inline-block;
+    width:30%;
+    margin: auto;
+    padding: 0;
+}
+
+#site_title {
+    font-weight: 600;
+    font-size: 30px;
+    font-family: "futura-pt";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-style: bold;
+    margin: 15%;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1em;
+}
+
+/* Navigation Bar */
+.nav_bar {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    width: 60%;
+}
+
+.nav_list {
     text-align: right;
-    font-size: 56px;
-    font-weight: bold;
-    font-family: Liberation Sans Narrow;
-    padding: 0% 2% 0% 0%;
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
 }
 
-.title {
-    text-align: right; 
-    font-size: 35px;
-    font-family: Liberation Sans Narrow;
-    margin: 0 10;
-    padding: 0% 2% 0% 0%;
-
+.nav_item {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: .75em 1em;
+    font-size: 16px;
+    cursor: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    color:rgba(255,255,255,.7);
 }
-.data_science_img {
-    width: 600px;
-    height: auto;
+
+/* Empty Boxes*/
+
+.empty1 {
+    width: 20%;
+    height: 5%;;
+    background-color: rgba(160, 137, 137, 0.7);
+    transform: translate3d(0,60px,0);
     margin: 0 auto;
-    padding: 5% 25%;
 }
 
-.two_columns {
-    width: 170px;
+/* Logo */
+.title_logo {
+    width: 100%;
     height: auto;
-    margin: 0 auto;
+}
+
+.logo{
+    max-width: 15%;
+    transform: translate3d(0,100px,0);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/* Header */
+
+.intro_header {
+    width: 100%;
+    text-align: center;
+    transform: translate3d(0,100px,0);
+}
+.header_content {
+    font-size: 66px;
+    font-family: europa;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+hr {
+    max-width: 250px;
+    border-color: rgb(173, 2, 2);
+    border-width: 3px;
+    transform: translate3d(0,60px,0);
+}
+
+.chemist {
+    text-align: center;
+    transform: translate3d(0,50px,0);
+    font-weight: 400;
+    font-family: proxima nova;
+}
+
+.banner {
+    text-align: center;
+    transform: translate3d(0,45px,0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    color:rgba(255,255,255,.7);
+}
+
+/* Featured Work */
+
+.featured_work_title {
+    font-size: 22px;
+    font-family: "futura-pt";
+    line-height: 1.2em;
+    letter-spacing: 0.25px;
+    font-weight: 800;
+    transform: translate3d(0,230px,0);
+    text-align: center;
+    
+}
+.featured_work {
+    width: 100%;
+    order: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.work_list {
+    display: inline-block;
+    width:30%;
+    order: 1;
+    height: 45%;
+    transform: translate3d(0,250px,0);
+}
+
+.kmean {
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+    display: block;
+    border-radius: 50%;
+}
+
+.election {
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.enron {
+    width: 97%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+/* Hover Effect */
+.overlay {
+    position: absolute;
+    border-radius: 800px;
     top: 0;
-    right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgb(173, 29, 65);
-    border-radius: 3px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(116, 105, 105);
+    text-align: center;
+  }
+
+.overlay-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.work_list:hover .overlay {
+    opacity: 2;
+  }
+/* Footer */
+
+footer {
+    max-height: 50px;
+    width: 50%;
+    background-color: rgba(160, 137, 137, 0.7);
+    transform: translate3d(0,400px,0);
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-.intro-txt {
-    font-size: 25px;
+.copyright {
     text-align: center;
-    font-weight: bold;
+    line-height: 30px;
+    font-weight: 800;
+    font-size: 1em;
 }
